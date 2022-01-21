@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.xujin.halo</groupId>
+        <artifactId>halo-starter-parent</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.xujin.halo</groupId>
+    <artifactId>halo-demo</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>halo-demo</name>
+    <description>Demo project for Halo</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>halo-demo-app</module>
+        <module>halo-demo-client</module>
+        <module>halo-demo-domain</module>
+        <module>halo-demo-infrastructure</module>
+        <module>halo-demo-start</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-demo-app</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-demo-client</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-demo-domain</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-demo-infrastructure</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-demo-start</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Maven 仓库 -->
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/50345-release-rIukss/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/50345-snapshot-gkUGkC/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

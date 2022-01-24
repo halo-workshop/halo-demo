@@ -15,20 +15,19 @@
 
     <dependencies>
         <!-- halo -->
-
         <dependency>
             <groupId>org.xujin.halo</groupId>
-            <artifactId>halo-starter-mybatis</artifactId>
+            <artifactId>halo-boot-starter-mybatis</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.xujin.halo</groupId>
-            <artifactId>halo-starter-flow</artifactId>
+            <artifactId>halo-boot-starter-flow</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.xujin.halo</groupId>
-            <artifactId>halo-starter-swagger</artifactId>
+            <artifactId>halo-boot-starter-swagger</artifactId>
         </dependency>
 
         <dependency>

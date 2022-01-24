@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>org.xujin.halo</groupId>
-            <artifactId>halo-starter-openfeign</artifactId>
+            <artifactId>halo-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
